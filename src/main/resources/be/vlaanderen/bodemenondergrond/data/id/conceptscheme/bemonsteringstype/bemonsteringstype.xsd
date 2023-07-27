@@ -2,12 +2,9 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:simpleType name="bemonsteringstype">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/geroerd">       - 
-        </xs:enumeration>
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/vloeistof">       - 
-        </xs:enumeration>
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/ongeroerd">       - 
-        </xs:enumeration>
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/geroerd"/>
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/vloeistof"/>
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/ongeroerd"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>

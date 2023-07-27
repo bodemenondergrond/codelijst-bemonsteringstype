@@ -23,7 +23,7 @@
         <xs:enumeration>
             <xsl:attribute name="value">
                 <xsl:value-of select="@rdf:about" />
-            </xsl:attribute>       - 
+            </xsl:attribute>
         </xs:enumeration>
     </xsl:template>
 </xsl:stylesheet>
