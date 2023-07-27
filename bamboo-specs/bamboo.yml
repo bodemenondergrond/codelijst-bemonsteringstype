@@ -1,8 +1,8 @@
 ---
 version: 2
 plan:
-  project-key: CODELIJST
-  key: BEMONSTERINGSTYPE
+  project-key: DOV
+  key: DOVBEMONSTERINGSTYPE
   name: codelijst-bemonsteringstype
 
 triggers:
@@ -69,13 +69,14 @@ Release:
 ---
 version: 2
 plan:
-  key: CODELIJST-BEMONSTERINGSTYPE
+  key: DOV-DOVBEMONSTERINGSTYPE
 
 plan-permissions:
   - groups:
       - bamboo-admin
       - bamboo-release
       - developer-admin
+      - dov-admin
     permissions:
       - view
       - edit
