@@ -1,7 +1,6 @@
 "uri","type","dc.id","collection","notation","prefLabel","altLabel","broader","broaderTransitive","broadMatch","changeNote","closeMatch","definition","editorialNote","exactMatch","example","hiddenLabel","historyNote","inScheme","mappingRelation","note","related","relatedMatch","scopeNote","semanticRelation","topConceptOf"
-"colt:test_collectie","skos:Collection","test_collectie",,,"PrefLabel van test_collectie",,,,,,,,,,,,,"cs:bemonsteringstype",,,,,,,
-"colt:test_collectie2","skos:Collection","test_collectie2",,,"PrefLabel van test_collectie",,,,,,,,,,,,,"cs:bemonsteringstype",,,,,,,
-"cs:bemonsteringstype","skos:ConceptScheme","bemonsteringstype",,,"PrefLabel van bemonsteringstype",,,,,,,,,,,,,,,,,,,,
-"ct:test_concept","skos:Concept","test_concept","colt:test_collectie","code (mnemonic) van test_concept","PrefLabel van test_concept",,"ct:test_topconcept",,,,,,,,,,,"cs:bemonsteringstype",,,,,,,
-"ct:test_concept2","skos:Concept","test_concept2","colt:test_collectie|colt:test_collectie2","code (mnemonic) van test_concept 2","PrefLabel van test_concept 2","blablabla","ct:test_topconcept",,,,,,,,,,,"cs:bemonsteringstype",,,,,,,
-"ct:test_topconcept","skos:Concept","test_topconcept","colt:test_collectie","code (mnemonic) van test_topconcept","PrefLabel van test_topconcept",,,,,,,,,,,,,"cs:bemonsteringstype",,,,,,,"cs:bemonsteringstype"
+"colt:bemonsteringstypes","skos:Collection   ","bemonsteringstypes","                       ",,"Collectie van bemonsteringstypes.",,,,,,,"                         ",,,,,,"cs:bemonsteringstype",,,,,,,
+"cs:bemonsteringstype   ","skos:ConceptScheme","bemonsteringstype ","                       ",,"Codelijst bemonsteringstype.     ",,,,,,,"Aard van de Bemonstering.",,,,,,,,,,,,,
+"ct:geroerd             ","skos:Concept      ","geroerd           ","colt:bemonsteringstypes",,"Geroerd                          ",,,,,,,"                         ",,,,,,"cs:bemonsteringstype",,,,,,,"cs:bemonsteringstype"
+"ct:ongeroerd           ","skos:Concept      ","ongeroerd         ","colt:bemonsteringstypes",,"Ongeroerd                        ",,,,,,,"                         ",,,,,,"cs:bemonsteringstype",,,,,,,"cs:bemonsteringstype"
+"ct:vloeistof           ","skos:Concept      ","vloeistof         ","colt:bemonsteringstypes",,"Vloeistof                        ",,,,,,,"                         ",,,,,,"cs:bemonsteringstype",,,,,,,"cs:bemonsteringstype"

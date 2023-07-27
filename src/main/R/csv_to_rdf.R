@@ -144,12 +144,17 @@ write(to_jsonld(df), tmp_file)
 # hiervoor dienen jena cli-tools geinstalleerd, zie README.md
 ttl_distributie <- paste(dataset_distributie_pad, distributie_naam, ".ttl", sep="")
 jsonld_distributie <- paste(dataset_distributie_pad, distributie_naam, ".jsonld", sep="")
+rdfxml_distributie <- paste(dataset_distributie_pad, distributie_naam, ".rdf", sep="")
 
 riot_cmd <- paste("riot --formatted=TURTLE ", tmp_file, " > ", ttl_distributie)
 system(riot_cmd)
 
 riot_cmd <- paste("riot --formatted=JSONLD ", ttl_distributie, " > ", jsonld_distributie)
 system(riot_cmd)
+
+riot_cmd <- paste("riot --output=RDF/XML ", ttl_distributie, " > ", rdfxml_distributie)
+system(riot_cmd)
+
 #system("shacl v --shapes ../resources/be/vlaanderen/bodemenondergrond/data/id/ontology/chemische-stof-ap-constraints/chemische-stof-ap-constraints.ttl --data ../resources/be/vlaanderen/bodemenondergrond/data/id/conceptscheme/testrepo/testrepo.ttl")
 
 

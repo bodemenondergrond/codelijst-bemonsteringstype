@@ -1,117 +1,134 @@
 {
-  "@graph" : [ {
-    "@id" : "colt:test_collectie",
-    "@type" : "skos:Collection",
-    "identifier" : "test_collectie",
-    "inScheme" : "cs:bemonsteringstype",
-    "member" : [ "ct:test_topconcept", "ct:test_concept2", "ct:test_concept" ],
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "PrefLabel van test_collectie"
+    "@graph": [
+        {
+            "@id": "colt:bemonsteringstypes",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Collectie van bemonsteringstypes."
+            },
+            "skos:member": [
+                {
+                    "@id": "ct:geroerd"
+                },
+                {
+                    "@id": "ct:ongeroerd"
+                },
+                {
+                    "@id": "ct:vloeistof"
+                }
+            ],
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringstype"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "                         "
+            },
+            "dc:identifier": "bemonsteringstypes",
+            "@type": "skos:Collection"
+        },
+        {
+            "@id": "ct:geroerd",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringstype"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Geroerd                          "
+            },
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringstype"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "                         "
+            },
+            "dc:identifier": "geroerd           ",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:ongeroerd",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringstype"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Ongeroerd                        "
+            },
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringstype"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "                         "
+            },
+            "dc:identifier": "ongeroerd         ",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:vloeistof",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringstype"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Vloeistof                        "
+            },
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringstype"
+            },
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "                         "
+            },
+            "dc:identifier": "vloeistof         ",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "cs:bemonsteringstype",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Codelijst bemonsteringstype.     "
+            },
+            "skos:hasTopConcept": [
+                {
+                    "@id": "ct:geroerd"
+                },
+                {
+                    "@id": "ct:ongeroerd"
+                },
+                {
+                    "@id": "ct:vloeistof"
+                }
+            ],
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "Aard van de Bemonstering."
+            },
+            "dc:identifier": "bemonsteringstype ",
+            "@type": "skos:ConceptScheme"
+        },
+        {
+            "@id": "file:///tmp/RtmptMquyt/file82eb72cb2bca.jsonld",
+            "skos:member": [
+                {
+                    "@id": "cs:bemonsteringstype"
+                },
+                {
+                    "@id": "colt:bemonsteringstypes"
+                }
+            ]
+        }
+    ],
+    "@context": {
+        "cs": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/",
+        "ct": "https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/",
+        "dct": "http://purl.org/dc/terms/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "colt": "https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringstype/",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#"
     }
-  }, {
-    "@id" : "colt:test_collectie2",
-    "@type" : "skos:Collection",
-    "identifier" : "test_collectie2",
-    "inScheme" : "cs:bemonsteringstype",
-    "member" : "ct:test_concept2",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "PrefLabel van test_collectie"
-    }
-  }, {
-    "@id" : "ct:test_concept",
-    "@type" : "skos:Concept",
-    "identifier" : "test_concept",
-    "broader" : "ct:test_topconcept",
-    "inScheme" : "cs:bemonsteringstype",
-    "notation" : "code (mnemonic) van test_concept",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "PrefLabel van test_concept"
-    }
-  }, {
-    "@id" : "ct:test_concept2",
-    "@type" : "skos:Concept",
-    "identifier" : "test_concept2",
-    "altLabel" : {
-      "@language" : "nl",
-      "@value" : "blablabla"
-    },
-    "broader" : "ct:test_topconcept",
-    "inScheme" : "cs:bemonsteringstype",
-    "notation" : "code (mnemonic) van test_concept 2",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "PrefLabel van test_concept 2"
-    }
-  }, {
-    "@id" : "ct:test_topconcept",
-    "@type" : "skos:Concept",
-    "identifier" : "test_topconcept",
-    "inScheme" : "cs:bemonsteringstype",
-    "narrower" : [ "ct:test_concept2", "ct:test_concept" ],
-    "notation" : "code (mnemonic) van test_topconcept",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "PrefLabel van test_topconcept"
-    },
-    "topConceptOf" : "cs:bemonsteringstype"
-  }, {
-    "@id" : "cs:bemonsteringstype",
-    "@type" : "skos:ConceptScheme",
-    "identifier" : "bemonsteringstype",
-    "hasTopConcept" : "ct:test_topconcept",
-    "prefLabel" : {
-      "@language" : "nl",
-      "@value" : "PrefLabel van bemonsteringstype"
-    }
-  } ],
-  "@context" : {
-    "prefLabel" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
-    },
-    "member" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#member",
-      "@type" : "@id"
-    },
-    "inScheme" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
-      "@type" : "@id"
-    },
-    "identifier" : {
-      "@id" : "http://purl.org/dc/elements/1.1/identifier"
-    },
-    "notation" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
-    },
-    "broader" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#broader",
-      "@type" : "@id"
-    },
-    "altLabel" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
-    },
-    "topConceptOf" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
-      "@type" : "@id"
-    },
-    "narrower" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
-      "@type" : "@id"
-    },
-    "hasTopConcept" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
-      "@type" : "@id"
-    },
-    "cs" : "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/",
-    "ct" : "https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/",
-    "dct" : "http://purl.org/dc/terms/",
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "xsd" : "http://www.w3.org/2001/XMLSchema#",
-    "skos" : "http://www.w3.org/2004/02/skos/core#",
-    "colt" : "https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringstype/",
-    "dc" : "http://purl.org/dc/elements/1.1/",
-    "xkos" : "http://rdf-vocabulary.ddialliance.org/xkos#"
-  }
 }

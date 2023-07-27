@@ -1,49 +1,47 @@
-@prefix cs:    <https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/> .
-@prefix ct:    <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/> .
-@prefix dct:   <http://purl.org/dc/terms/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix colt:  <https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringstype/> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
-@prefix xkos:  <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix colt: <https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringstype/> .
+@prefix cs:   <https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/> .
+@prefix ct:   <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/> .
+@prefix dc:   <http://purl.org/dc/elements/1.1/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-colt:test_collectie2  a  skos:Collection ;
-        dc:identifier   "test_collectie2" ;
-        skos:inScheme   cs:bemonsteringstype ;
-        skos:member     ct:test_concept2 ;
-        skos:prefLabel  "PrefLabel van test_collectie"@nl .
+colt:bemonsteringstypes
+        rdf:type         skos:Collection;
+        dc:identifier    "bemonsteringstypes";
+        skos:definition  "                         "@nl;
+        skos:inScheme    cs:bemonsteringstype;
+        skos:member      ct:vloeistof , ct:ongeroerd , ct:geroerd;
+        skos:prefLabel   "Collectie van bemonsteringstypes."@nl .
 
-ct:test_concept2  a     skos:Concept ;
-        dc:identifier   "test_concept2" ;
-        skos:altLabel   "blablabla"@nl ;
-        skos:broader    ct:test_topconcept ;
-        skos:inScheme   cs:bemonsteringstype ;
-        skos:notation   "code (mnemonic) van test_concept 2" ;
-        skos:prefLabel  "PrefLabel van test_concept 2"@nl .
-
-ct:test_topconcept  a      skos:Concept ;
-        dc:identifier      "test_topconcept" ;
-        skos:inScheme      cs:bemonsteringstype ;
-        skos:narrower      ct:test_concept , ct:test_concept2 ;
-        skos:notation      "code (mnemonic) van test_topconcept" ;
-        skos:prefLabel     "PrefLabel van test_topconcept"@nl ;
+ct:ongeroerd  rdf:type     skos:Concept;
+        dc:identifier      "ongeroerd         ";
+        skos:definition    "                         "@nl;
+        skos:inScheme      cs:bemonsteringstype;
+        skos:prefLabel     "Ongeroerd                        "@nl;
         skos:topConceptOf  cs:bemonsteringstype .
 
-cs:bemonsteringstype  a     skos:ConceptScheme ;
-        dc:identifier       "bemonsteringstype" ;
-        skos:hasTopConcept  ct:test_topconcept ;
-        skos:prefLabel      "PrefLabel van bemonsteringstype"@nl .
+cs:bemonsteringstype  rdf:type  skos:ConceptScheme;
+        dc:identifier       "bemonsteringstype ";
+        skos:definition     "Aard van de Bemonstering."@nl;
+        skos:hasTopConcept  ct:vloeistof , ct:ongeroerd , ct:geroerd;
+        skos:prefLabel      "Codelijst bemonsteringstype.     "@nl .
 
-colt:test_collectie  a  skos:Collection ;
-        dc:identifier   "test_collectie" ;
-        skos:inScheme   cs:bemonsteringstype ;
-        skos:member     ct:test_concept , ct:test_concept2 , ct:test_topconcept ;
-        skos:prefLabel  "PrefLabel van test_collectie"@nl .
+ct:geroerd  rdf:type       skos:Concept;
+        dc:identifier      "geroerd           ";
+        skos:definition    "                         "@nl;
+        skos:inScheme      cs:bemonsteringstype;
+        skos:prefLabel     "Geroerd                          "@nl;
+        skos:topConceptOf  cs:bemonsteringstype .
 
-ct:test_concept  a      skos:Concept ;
-        dc:identifier   "test_concept" ;
-        skos:broader    ct:test_topconcept ;
-        skos:inScheme   cs:bemonsteringstype ;
-        skos:notation   "code (mnemonic) van test_concept" ;
-        skos:prefLabel  "PrefLabel van test_concept"@nl .
+ct:vloeistof  rdf:type     skos:Concept;
+        dc:identifier      "vloeistof         ";
+        skos:definition    "                         "@nl;
+        skos:inScheme      cs:bemonsteringstype;
+        skos:prefLabel     "Vloeistof                        "@nl;
+        skos:topConceptOf  cs:bemonsteringstype .
+
+<file:///tmp/RtmptMquyt/file82eb72cb2bca.jsonld>
+        skos:member  colt:bemonsteringstypes , cs:bemonsteringstype .
