@@ -17,32 +17,32 @@
                 "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-bemonsteringstype.0.1.0.bemonsteringstype_rdf.html"
             },
             "@type": "dcat:Distribution",
+            "dcat:mediaType": {
+                "@id": "https://www.iana.org/assignments/media-types/application/rdf+xml"
+            },
             "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringstype.0.1.0.bemonsteringstype_rdf",
-            "dcterms:format": {
-                "@id": "file_type:RDF_TURTLE"
-            },
-            "rdfs:label": {
-                "@language": "nl",
-                "@value": "Codelijst bemonsteringstype, in Turtle rdf-formaat."
-            },
-            "dcat:downloadURL": {
-                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringstype.0.1.0.bemonsteringstype.ttl"
-            },
             "dcterms:issued": {
                 "@value": "2023-07-27",
                 "@type": "xsd:date"
             },
-            "dcat:mediaType": {
-                "@id": "https://www.iana.org/assignments/media-types/text/turtle"
-            },
             "dcterms:identifier": {
                 "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_rdf"
+            },
+            "dcterms:format": {
+                "@id": "file_type:RDF_XML"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst bemonsteringstype, in xml rdf-formaat."
             },
             "dcat:compressFormat": {
                 "@id": "http://www.iana.org/assignments/media-types/application/gzip"
             },
             "dcterms:rightsHolder": {
                 "@id": "ovo:OVO003751"
+            },
+            "dcat:downloadURL": {
+                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringstype.0.1.0.bemonsteringstype.rdf"
             },
             "dcat:accessURL": {
                 "@id": "https://github.com/bodemenondergrond/codelijst-bemonsteringstype.git"
@@ -248,29 +248,32 @@
                     "@id": "eurovoc:2407"
                 }
             ],
-            "foaf:page": {
-                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/dataset/codelijst-bemonsteringstype.0.1.0.html"
-            },
+            "dcat:distribution": [
+                {
+                    "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_ttl"
+                },
+                {
+                    "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_xsd"
+                },
+                {
+                    "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_csv"
+                },
+                {
+                    "@id": "omg_id:package/be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-bemonsteringstype.0.1.0"
+                },
+                {
+                    "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_rdf"
+                },
+                {
+                    "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_jsonld"
+                }
+            ],
             "dcterms:license": {
                 "@id": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0"
             },
             "dcterms:identifier": {
                 "@id": "omg_dataset:codelijst-bemonsteringstype.0.1.0"
             },
-            "dcat:distribution": [
-                {
-                    "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype.csv"
-                },
-                {
-                    "@id": "omg_id:package/be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-bemonsteringstype.0.1.0"
-                },
-                {
-                    "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype.jsonld"
-                },
-                {
-                    "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype.ttl"
-                }
-            ],
             "dcterms:title": {
                 "@language": "nl",
                 "@value": "Codelijst bemonsteringstype"
@@ -314,6 +317,9 @@
             },
             "dcterms:language": {
                 "@id": "language:NLD"
+            },
+            "foaf:page": {
+                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/dataset/codelijst-bemonsteringstype.0.1.0.html"
             },
             "rdfs:label": {
                 "@language": "nl",
@@ -385,6 +391,54 @@
             "dcterms:issued": {
                 "@value": "2023-07-27",
                 "@type": "xsd:date"
+            }
+        },
+        {
+            "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_xsd",
+            "dcat:mediaType": {
+                "@id": "https://www.iana.org/assignments/media-types/application/xml"
+            },
+            "dcterms:title": {
+                "@language": "nl",
+                "@value": "Codelijst bemonsteringstype in xml/xsd formaat."
+            },
+            "dcat:downloadURL": {
+                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringstype.0.1.0.bemonsteringstype.xsd"
+            },
+            "dcat:compressFormat": {
+                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
+            },
+            "foaf:page": {
+                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-bemonsteringstype.0.1.0.bemonsteringstype_xsd.html"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst bemonsteringstype, in xml xsd-formaat."
+            },
+            "dcterms:accessRights": {
+                "@id": "access_right:PUBLIC"
+            },
+            "dcat:accessURL": {
+                "@id": "https://github.com/bodemenondergrond/codelijst-bemonsteringstype.git"
+            },
+            "dcterms:issued": {
+                "@value": "2023-07-27",
+                "@type": "xsd:date"
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "dcterms:identifier": {
+                "@id": "omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_xsd"
+            },
+            "@type": "dcat:Distribution",
+            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringstype.0.1.0.bemonsteringstype_xsd",
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Codelijst bemonsteringstype, geserialiseerd in een xsd bestand met een enumeratie."
+            },
+            "dcterms:format": {
+                "@id": "file_type:XSD"
             }
         },
         {

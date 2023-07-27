@@ -43,19 +43,19 @@
 
 omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_rdf
         rdf:type              dcat:Distribution;
-        rdfs:label            "Codelijst bemonsteringstype, in Turtle rdf-formaat."@nl;
+        rdfs:label            "Codelijst bemonsteringstype, in xml rdf-formaat."@nl;
         dc:identifier         "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringstype.0.1.0.bemonsteringstype_rdf";
         dcterms:accessRights  access_right:PUBLIC;
         dcterms:description   "Codelijst bemonsteringstype, geserialiseerd in rdf/xml bestand."@nl;
-        dcterms:format        file_type:RDF_TURTLE;
+        dcterms:format        file_type:RDF_XML;
         dcterms:identifier    omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_rdf;
         dcterms:issued        "2023-07-27"^^xsd:date;
         dcterms:rightsHolder  ovo:OVO003751;
         dcterms:title         "Codelijst bemonsteringstype in xml rdf-formaat."@nl;
         dcat:accessURL        <https://github.com/bodemenondergrond/codelijst-bemonsteringstype.git>;
         dcat:compressFormat   <http://www.iana.org/assignments/media-types/application/gzip>;
-        dcat:downloadURL      <https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringstype.0.1.0.bemonsteringstype.ttl>;
-        dcat:mediaType        <https://www.iana.org/assignments/media-types/text/turtle>;
+        dcat:downloadURL      <https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringstype.0.1.0.bemonsteringstype.rdf>;
+        dcat:mediaType        <https://www.iana.org/assignments/media-types/application/rdf+xml>;
         foaf:page             <https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-bemonsteringstype.0.1.0.bemonsteringstype_rdf.html> .
 
 omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_jsonld
@@ -137,6 +137,23 @@ omg_package:be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-bemonstering
         spdx:versionInfo       "0.1.0";
         dcat:downloadURL       <https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/bodemenondergrond/data/id/graph/codelijst-bemonsteringstype/0.1.0/codelijst-bemonsteringstype-0.1.0.jar> .
 
+omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_xsd
+        rdf:type              dcat:Distribution;
+        rdfs:label            "Codelijst bemonsteringstype, in xml xsd-formaat."@nl;
+        dc:identifier         "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringstype.0.1.0.bemonsteringstype_xsd";
+        dcterms:accessRights  access_right:PUBLIC;
+        dcterms:description   "Codelijst bemonsteringstype, geserialiseerd in een xsd bestand met een enumeratie."@nl;
+        dcterms:format        file_type:XSD;
+        dcterms:identifier    omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_xsd;
+        dcterms:issued        "2023-07-27"^^xsd:date;
+        dcterms:rightsHolder  ovo:OVO003751;
+        dcterms:title         "Codelijst bemonsteringstype in xml/xsd formaat."@nl;
+        dcat:accessURL        <https://github.com/bodemenondergrond/codelijst-bemonsteringstype.git>;
+        dcat:compressFormat   <http://www.iana.org/assignments/media-types/application/gzip>;
+        dcat:downloadURL      <https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringstype.0.1.0.bemonsteringstype.xsd>;
+        dcat:mediaType        <https://www.iana.org/assignments/media-types/application/xml>;
+        foaf:page             <https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-bemonsteringstype.0.1.0.bemonsteringstype_xsd.html> .
+
 omg_dataset:codelijst-bemonsteringstype.0.1.0
         rdf:type                    dcat:Dataset;
         rdfs:label                  "Codelijst bemonsteringstype (0.1.0)"@nl;
@@ -159,7 +176,7 @@ omg_dataset:codelijst-bemonsteringstype.0.1.0
         void:rootResource           omg_conceptscheme:bemonsteringstype;
         owl:versionInfo             "0.1.0";
         dcat:contactPoint           omg_vcard:helpdesk;
-        dcat:distribution           omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype.csv , omg_package:be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-bemonsteringstype.0.1.0 , omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype.jsonld , omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype.ttl;
+        dcat:distribution           omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_ttl , omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_xsd , omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_csv , omg_package:be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-bemonsteringstype.0.1.0 , omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_rdf , omg_distribution:codelijst-bemonsteringstype.0.1.0.bemonsteringstype_jsonld;
         dcat:landingPage            <https://data.bodemenondergrond.vlaanderen.be/doc/catalog/codelijst.html>;
         dcat:theme                  gemet:10087 , datatheme_eu:ENVI , datatheme_be:ENVI , eurovoc:2407;
         foaf:page                   <https://data.bodemenondergrond.vlaanderen.be/doc/dataset/codelijst-bemonsteringstype.0.1.0.html> .
