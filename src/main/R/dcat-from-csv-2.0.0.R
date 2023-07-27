@@ -8,8 +8,8 @@ library(stringr)
 library(yaml)
 library(R.utils)
 
-#setwd('/home/gehau/git/codelijst-testrepo/src/main/R')
-setwd('/Users/pieter/work/svn/codelijst-testrepo/src/main/R')
+setwd('/home/gehau/git/codelijst-bemonsteringstype/src/main/R')
+#setwd('/Users/pieter/work/svn/codelijst-testrepo/src/main/R')
 
 ##### FUNCTIES
 

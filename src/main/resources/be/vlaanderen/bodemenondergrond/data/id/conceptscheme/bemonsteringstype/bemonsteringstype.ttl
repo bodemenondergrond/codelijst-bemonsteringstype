@@ -9,39 +9,32 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 colt:bemonsteringstypes
-        rdf:type         skos:Collection;
-        dc:identifier    "bemonsteringstypes";
-        skos:definition  "                         "@nl;
-        skos:inScheme    cs:bemonsteringstype;
-        skos:member      ct:vloeistof , ct:ongeroerd , ct:geroerd;
-        skos:prefLabel   "Collectie van bemonsteringstypes."@nl .
+        rdf:type        skos:Collection;
+        dc:identifier   "bemonsteringstypes";
+        skos:inScheme   cs:bemonsteringstype;
+        skos:member     ct:vloeistof , ct:ongeroerd , ct:geroerd;
+        skos:prefLabel  "Collectie van bemonsteringstypes."@nl .
 
 ct:ongeroerd  rdf:type     skos:Concept;
-        dc:identifier      "ongeroerd         ";
-        skos:definition    "                         "@nl;
+        dc:identifier      "ongeroerd";
         skos:inScheme      cs:bemonsteringstype;
-        skos:prefLabel     "Ongeroerd                        "@nl;
+        skos:prefLabel     "Ongeroerd"@nl;
         skos:topConceptOf  cs:bemonsteringstype .
 
 cs:bemonsteringstype  rdf:type  skos:ConceptScheme;
-        dc:identifier       "bemonsteringstype ";
+        dc:identifier       "bemonsteringstype";
         skos:definition     "Aard van de Bemonstering."@nl;
         skos:hasTopConcept  ct:vloeistof , ct:ongeroerd , ct:geroerd;
-        skos:prefLabel      "Codelijst bemonsteringstype.     "@nl .
+        skos:prefLabel      "Codelijst bemonsteringstype."@nl .
 
 ct:geroerd  rdf:type       skos:Concept;
-        dc:identifier      "geroerd           ";
-        skos:definition    "                         "@nl;
+        dc:identifier      "geroerd";
         skos:inScheme      cs:bemonsteringstype;
-        skos:prefLabel     "Geroerd                          "@nl;
+        skos:prefLabel     "Geroerd"@nl;
         skos:topConceptOf  cs:bemonsteringstype .
 
 ct:vloeistof  rdf:type     skos:Concept;
-        dc:identifier      "vloeistof         ";
-        skos:definition    "                         "@nl;
+        dc:identifier      "vloeistof";
         skos:inScheme      cs:bemonsteringstype;
-        skos:prefLabel     "Vloeistof                        "@nl;
+        skos:prefLabel     "Vloeistof"@nl;
         skos:topConceptOf  cs:bemonsteringstype .
-
-<file:///tmp/RtmptMquyt/file82eb72cb2bca.jsonld>
-        skos:member  colt:bemonsteringstypes , cs:bemonsteringstype .

@@ -20,10 +20,6 @@
             "skos:inScheme": {
                 "@id": "cs:bemonsteringstype"
             },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "                         "
-            },
             "dc:identifier": "bemonsteringstypes",
             "@type": "skos:Collection"
         },
@@ -34,16 +30,12 @@
             },
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Geroerd                          "
+                "@value": "Geroerd"
             },
             "skos:inScheme": {
                 "@id": "cs:bemonsteringstype"
             },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "                         "
-            },
-            "dc:identifier": "geroerd           ",
+            "dc:identifier": "geroerd",
             "@type": "skos:Concept"
         },
         {
@@ -53,16 +45,12 @@
             },
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Ongeroerd                        "
+                "@value": "Ongeroerd"
             },
             "skos:inScheme": {
                 "@id": "cs:bemonsteringstype"
             },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "                         "
-            },
-            "dc:identifier": "ongeroerd         ",
+            "dc:identifier": "ongeroerd",
             "@type": "skos:Concept"
         },
         {
@@ -72,23 +60,19 @@
             },
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Vloeistof                        "
+                "@value": "Vloeistof"
             },
             "skos:inScheme": {
                 "@id": "cs:bemonsteringstype"
             },
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "                         "
-            },
-            "dc:identifier": "vloeistof         ",
+            "dc:identifier": "vloeistof",
             "@type": "skos:Concept"
         },
         {
             "@id": "cs:bemonsteringstype",
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Codelijst bemonsteringstype.     "
+                "@value": "Codelijst bemonsteringstype."
             },
             "skos:hasTopConcept": [
                 {
@@ -105,19 +89,8 @@
                 "@language": "nl",
                 "@value": "Aard van de Bemonstering."
             },
-            "dc:identifier": "bemonsteringstype ",
+            "dc:identifier": "bemonsteringstype",
             "@type": "skos:ConceptScheme"
-        },
-        {
-            "@id": "file:///tmp/RtmptMquyt/file82eb72cb2bca.jsonld",
-            "skos:member": [
-                {
-                    "@id": "cs:bemonsteringstype"
-                },
-                {
-                    "@id": "colt:bemonsteringstypes"
-                }
-            ]
         }
     ],
     "@context": {

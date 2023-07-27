@@ -1,6 +1,6 @@
 "uri","type","dc.id","collection","notation","prefLabel","altLabel","broader","broaderTransitive","broadMatch","changeNote","closeMatch","definition","editorialNote","exactMatch","example","hiddenLabel","historyNote","inScheme","mappingRelation","note","related","relatedMatch","scopeNote","semanticRelation","topConceptOf"
-"colt:bemonsteringstypes","skos:Collection   ","bemonsteringstypes","                       ",,"Collectie van bemonsteringstypes.",,,,,,,"                         ",,,,,,"cs:bemonsteringstype",,,,,,,
-"cs:bemonsteringstype   ","skos:ConceptScheme","bemonsteringstype ","                       ",,"Codelijst bemonsteringstype.     ",,,,,,,"Aard van de Bemonstering.",,,,,,,,,,,,,
-"ct:geroerd             ","skos:Concept      ","geroerd           ","colt:bemonsteringstypes",,"Geroerd                          ",,,,,,,"                         ",,,,,,"cs:bemonsteringstype",,,,,,,"cs:bemonsteringstype"
-"ct:ongeroerd           ","skos:Concept      ","ongeroerd         ","colt:bemonsteringstypes",,"Ongeroerd                        ",,,,,,,"                         ",,,,,,"cs:bemonsteringstype",,,,,,,"cs:bemonsteringstype"
-"ct:vloeistof           ","skos:Concept      ","vloeistof         ","colt:bemonsteringstypes",,"Vloeistof                        ",,,,,,,"                         ",,,,,,"cs:bemonsteringstype",,,,,,,"cs:bemonsteringstype"
+"colt:bemonsteringstypes","skos:Collection","bemonsteringstypes",,,"Collectie van bemonsteringstypes.",,,,,,,,,,,,,"cs:bemonsteringstype",,,,,,,
+"cs:bemonsteringstype","skos:ConceptScheme","bemonsteringstype",,,"Codelijst bemonsteringstype.",,,,,,,"Aard van de Bemonstering.",,,,,,,,,,,,,
+"ct:geroerd","skos:Concept","geroerd","colt:bemonsteringstypes",,"Geroerd",,,,,,,,,,,,,"cs:bemonsteringstype",,,,,,,"cs:bemonsteringstype"
+"ct:ongeroerd","skos:Concept","ongeroerd","colt:bemonsteringstypes",,"Ongeroerd",,,,,,,,,,,,,"cs:bemonsteringstype",,,,,,,"cs:bemonsteringstype"
+"ct:vloeistof","skos:Concept","vloeistof","colt:bemonsteringstypes",,"Vloeistof",,,,,,,,,,,,,"cs:bemonsteringstype",,,,,,,"cs:bemonsteringstype"
