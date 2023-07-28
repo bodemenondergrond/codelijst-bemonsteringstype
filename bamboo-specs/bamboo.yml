@@ -29,6 +29,8 @@ Build:
         goal: clean deploy
   requirements:
     - REMOTE_ONLY
+labels:
+- dov-codetabel
 
 Release:
   key: REL
