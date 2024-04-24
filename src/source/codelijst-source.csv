@@ -1,0 +1,6 @@
+uri,dc.identifier,collections,notation,prefLabel,altLabel,broader,broaderTransitive,broadMatch,changeNote,closeMatch,definition,editorialNote,exactMatch,example,hiddenLabel,historyNote,inScheme,mappingRelation,note,related,relatedMatch,scopeNote,semanticRelation,topConceptOf
+conceptscheme:bemonsteringstype,be.vlaanderen.bodemenondergrond.data.id.conceptscheme.bemonsteringstype,,bemonsteringstype,Codelijst bemonsteringstype.,,,,,,,Aard van de Bemonstering.,,,,,,,,,,,,,
+collectie:bemonsteringstypes,be.vlaanderen.bodemenondergrond.data.id.collection.bemonsteringstype.bemonsteringstypes,,bemonsteringstypes,Collectie van bemonsteringstypes.,,,,,,,,,,,,,conceptscheme:bemonsteringstype,,,,,,,
+concept:geroerd,be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.geroerd,collectie:bemonsteringstypes,geroerd,Geroerd,,,,,,,,,,,,,conceptscheme:bemonsteringstype,,,,,,,conceptscheme:bemonsteringstype
+concept:ongeroerd,be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.ongeroerd,collectie:bemonsteringstypes,ongeroerd,Ongeroerd,,,,,,,,,,,,,conceptscheme:bemonsteringstype,,,,,,,conceptscheme:bemonsteringstype
+concept:vloeistof,be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.vloeistof,collectie:bemonsteringstypes,vloeistof,Vloeistof,,,,,,,,,,,,,conceptscheme:bemonsteringstype,,,,,,,conceptscheme:bemonsteringstype

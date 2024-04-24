@@ -1,50 +1,99 @@
 <rdf:RDF
+    xmlns:omg_id="https://data.bodemenondergrond.vlaanderen.be/id/"
+    xmlns:assettype="http://purl.org/adms/assettype/"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:metadata="https://data.omgeving.vlaanderen.be/ns/metadata#"
+    xmlns:omg_periodoftime="https://data.bodemenondergrond.vlaanderen.be/id/periodoftime/"
     xmlns:dct="http://purl.org/dc/terms/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:conceptscheme="https://data.omgeving.vlaanderen.be/id/conceptscheme/"
+    xmlns:omg_dataservice="https://data.bodemenondergrond.vlaanderen.be/id/dataservice/"
+    xmlns:repo="https://repo.omgeving.vlaanderen.be/artifactory/release/"
+    xmlns:datasets="https://datasets.omgeving.vlaanderen.be/"
+    xmlns:concept="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/"
+    xmlns:gemet="http://www.eionet.europa.eu/gemet/concept/"
+    xmlns:ssd="http://www.w3.org/ns/sparql-service-description#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:frequency="http://publications.europa.eu/resource/authority/frequency/"
+    xmlns:omg_graph="https://data.bodemenondergrond.vlaanderen.be/id/graph/"
+    xmlns:omg_dataset="https://data.bodemenondergrond.vlaanderen.be/id/dataset/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:omg_vcard="https://data.bodemenondergrond.vlaanderen.be/id/vcard/"
+    xmlns:wise="http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/"
+    xmlns:ovo="http://data.vlaanderen.be/id/organisatie/"
+    xmlns:ts="http://www.w3.org/ns/formats/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:spdx="http://spdx.org/rdf/terms#"
+    xmlns:file_type="http://publications.europa.eu/resource/authority/file-type/"
+    xmlns:omg_collection="https://data.bodemenondergrond.vlaanderen.be/id/collection/"
+    xmlns:omg_package="https://data.bodemenondergrond.vlaanderen.be/id/package/"
+    xmlns:licence="http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/"
+    xmlns:omg_service="https://data.bodemenondergrond.vlaanderen.be/id/service/"
+    xmlns:access_right="http://publications.europa.eu/resource/authority/access-right/"
+    xmlns:omg_distribution_doc="https://data.bodemenondergrond.vlaanderen.be/doc/distribution/"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:colt="https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringstype/"
-    xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
-    xmlns:cs="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/"
+    xmlns:omg_named_graph="https://data.bodemenondergrond.vlaanderen.be/id/namedgraph/"
+    xmlns:adms="http://www.w3.org/ns/adms#"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:ct="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
-  <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringstype">
-    <skos:prefLabel xml:lang="nl">Codelijst bemonsteringstype.</skos:prefLabel>
-    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/geroerd"/>
-    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/ongeroerd"/>
-    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/vloeistof"/>
-    <skos:definition xml:lang="nl">Aard van de Bemonstering.</skos:definition>
-    <dc:identifier>bemonsteringstype</dc:identifier>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-  </rdf:Description>
+    xmlns:country="http://publications.europa.eu/resource/authority/country/"
+    xmlns:omg_distribution="https://data.bodemenondergrond.vlaanderen.be/id/distribution/"
+    xmlns:omg_dataset_doc="https://data.bodemenondergrond.vlaanderen.be/doc/dataset/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:omg_catalog="https://data.omgeving.vlaanderen.be/id/catalog/"
+    xmlns:datatheme_be="http://vocab.belgif.be/auth/datatheme/"
+    xmlns:omg_graphcollection="https://data.bodemenondergrond.vlaanderen.be/id/graphcollection/"
+    xmlns:omg_catalog_doc="https://data.omgeving.vlaanderen.be/doc/catalog/"
+    xmlns:eurovoc="http://eurovoc.europa.eu/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:collectie="https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringstype/"
+    xmlns:xkos="http://rdf-vocabulary.ddialliance.org/xkos#"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:datatheme_eu="http://publications.europa.eu/resource/authority/data-theme/"
+    xmlns:omg_ontology="https://data.bodemenondergrond.vlaanderen.be/id/ontology/"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" > 
   <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/geroerd">
-    <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
+    <skos:topConceptOf rdf:resource="https://data.omgeving.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
     <skos:prefLabel xml:lang="nl">Geroerd</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
-    <dc:identifier>geroerd</dc:identifier>
+    <skos:notation>geroerd</skos:notation>
+    <skos:inScheme rdf:resource="https://data.omgeving.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dc:identifier>be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.geroerd</dc:identifier>
   </rdf:Description>
   <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringstype/bemonsteringstypes">
     <skos:prefLabel xml:lang="nl">Collectie van bemonsteringstypes.</skos:prefLabel>
-    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/geroerd"/>
-    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/ongeroerd"/>
+    <skos:notation>bemonsteringstypes</skos:notation>
     <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/vloeistof"/>
-    <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
-    <dc:identifier>bemonsteringstypes</dc:identifier>
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/ongeroerd"/>
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/geroerd"/>
+    <skos:inScheme rdf:resource="https://data.omgeving.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <dc:identifier>be.vlaanderen.bodemenondergrond.data.id.collection.bemonsteringstype.bemonsteringstypes</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.omgeving.vlaanderen.be/id/conceptscheme/bemonsteringstype">
+    <skos:prefLabel xml:lang="nl">Codelijst bemonsteringstype.</skos:prefLabel>
+    <skos:note xml:lang="nl">Aard van de Bemonstering.</skos:note>
+    <skos:notation>bemonsteringstype</skos:notation>
+    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/vloeistof"/>
+    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/ongeroerd"/>
+    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/geroerd"/>
+    <skos:definition xml:lang="nl">Aard van de Bemonstering.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dc:identifier>be.vlaanderen.bodemenondergrond.data.id.conceptscheme.bemonsteringstype</dc:identifier>
   </rdf:Description>
   <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/vloeistof">
-    <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
+    <skos:topConceptOf rdf:resource="https://data.omgeving.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
     <skos:prefLabel xml:lang="nl">Vloeistof</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
-    <dc:identifier>vloeistof</dc:identifier>
+    <skos:notation>vloeistof</skos:notation>
+    <skos:inScheme rdf:resource="https://data.omgeving.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dc:identifier>be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.vloeistof</dc:identifier>
   </rdf:Description>
   <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringstype/ongeroerd">
-    <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
+    <skos:topConceptOf rdf:resource="https://data.omgeving.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
     <skos:prefLabel xml:lang="nl">Ongeroerd</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
-    <dc:identifier>ongeroerd</dc:identifier>
+    <skos:notation>ongeroerd</skos:notation>
+    <skos:inScheme rdf:resource="https://data.omgeving.vlaanderen.be/id/conceptscheme/bemonsteringstype"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dc:identifier>be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.ongeroerd</dc:identifier>
   </rdf:Description>
 </rdf:RDF>
