@@ -54,28 +54,28 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-collectie:bemonsteringstypes dc:identifier "be.vlaanderen.bodemenondergrond.data.id.collection.bemonsteringstype.bemonsteringstypes";
-    a skos:Collection;
-    skos:inScheme conceptscheme:bemonsteringstype;
-    skos:member concept:geroerd, concept:ongeroerd, concept:vloeistof;
-    skos:notation "bemonsteringstypes";
-    skos:prefLabel "Collectie van bemonsteringstypes."@nl.
 concept:geroerd dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.geroerd";
     a skos:Concept;
+    skos:definition "Monstername waarbij de oorspronkelijke structuur en gelaagdheid van het materiaal niet bewaard wordt. Het resulterende monster laat het niet toe een gedetailleerde beschrijving of bepaalde analyses met betrekking tot de structuur of gelaagdheid  (bv. Bulkdensiteit, volumemassa, grondmechanische proeven, ....) uit te voeren."@nl;
     skos:inScheme conceptscheme:bemonsteringstype;
     skos:notation "geroerd";
+    skos:note "Monstername waarbij de oorspronkelijke structuur en gelaagdheid van het materiaal niet bewaard wordt. Het resulterende monster laat het niet toe een gedetailleerde beschrijving of bepaalde analyses met betrekking tot de structuur of gelaagdheid  (bv. Bulkdensiteit, volumemassa, grondmechanische proeven, ....) uit te voeren."@nl;
     skos:prefLabel "Geroerd"@nl;
     skos:topConceptOf conceptscheme:bemonsteringstype.
 concept:ongeroerd dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.ongeroerd";
     a skos:Concept;
+    skos:definition "Monstername waarbij de oorspronkelijke structuur en gelaagdheid van het materiaal maximaal bewaard wordt."@nl;
     skos:inScheme conceptscheme:bemonsteringstype;
     skos:notation "ongeroerd";
+    skos:note "Monstername waarbij de oorspronkelijke structuur en gelaagdheid van het materiaal maximaal bewaard wordt."@nl;
     skos:prefLabel "Ongeroerd"@nl;
     skos:topConceptOf conceptscheme:bemonsteringstype.
 concept:vloeistof dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.vloeistof";
     a skos:Concept;
+    skos:definition "Het monster bestaat uit een van nature vloeibare stof (een stof die gemakkelijk vormveranderingen ondergaat, samendrukbaar is, maar zich verzet tegen deze volumeverandering). Het begrip gelaagdheid is niet relevant voor het karakteriseren van het materiaal waaruit het monster is genomen."@nl;
     skos:inScheme conceptscheme:bemonsteringstype;
     skos:notation "vloeistof";
+    skos:note "Het monster bestaat uit een van nature vloeibare stof (een stof die gemakkelijk vormveranderingen ondergaat, samendrukbaar is, maar zich verzet tegen deze volumeverandering). Het begrip gelaagdheid is niet relevant voor het karakteriseren van het materiaal waaruit het monster is genomen."@nl;
     skos:prefLabel "Vloeistof"@nl;
     skos:topConceptOf conceptscheme:bemonsteringstype.
 conceptscheme:bemonsteringstype dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.bemonsteringstype";

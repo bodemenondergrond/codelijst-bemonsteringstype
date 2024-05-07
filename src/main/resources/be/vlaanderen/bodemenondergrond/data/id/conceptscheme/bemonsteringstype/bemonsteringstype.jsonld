@@ -387,24 +387,13 @@
     },
     "graph": [
         {
-            "id": "collectie:bemonsteringstypes",
-            "type": "skos:Collection",
-            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.collection.bemonsteringstype.bemonsteringstypes",
-            "inScheme": "conceptscheme:bemonsteringstype",
-            "member": [
-                "concept:geroerd",
-                "concept:ongeroerd",
-                "concept:vloeistof"
-            ],
-            "notation": "bemonsteringstypes",
-            "prefLabel": "Collectie van bemonsteringstypes."
-        },
-        {
             "id": "concept:geroerd",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.geroerd",
+            "definition": "Monstername waarbij de oorspronkelijke structuur en gelaagdheid van het materiaal niet bewaard wordt. Het resulterende monster laat het niet toe een gedetailleerde beschrijving of bepaalde analyses met betrekking tot de structuur of gelaagdheid  (bv. Bulkdensiteit, volumemassa, grondmechanische proeven, ....) uit te voeren.",
             "inScheme": "conceptscheme:bemonsteringstype",
             "notation": "geroerd",
+            "note": "Monstername waarbij de oorspronkelijke structuur en gelaagdheid van het materiaal niet bewaard wordt. Het resulterende monster laat het niet toe een gedetailleerde beschrijving of bepaalde analyses met betrekking tot de structuur of gelaagdheid  (bv. Bulkdensiteit, volumemassa, grondmechanische proeven, ....) uit te voeren.",
             "prefLabel": "Geroerd",
             "topConceptOf": "conceptscheme:bemonsteringstype"
         },
@@ -412,8 +401,10 @@
             "id": "concept:ongeroerd",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.ongeroerd",
+            "definition": "Monstername waarbij de oorspronkelijke structuur en gelaagdheid van het materiaal maximaal bewaard wordt.",
             "inScheme": "conceptscheme:bemonsteringstype",
             "notation": "ongeroerd",
+            "note": "Monstername waarbij de oorspronkelijke structuur en gelaagdheid van het materiaal maximaal bewaard wordt.",
             "prefLabel": "Ongeroerd",
             "topConceptOf": "conceptscheme:bemonsteringstype"
         },
@@ -421,8 +412,10 @@
             "id": "concept:vloeistof",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringstype.vloeistof",
+            "definition": "Het monster bestaat uit een van nature vloeibare stof (een stof die gemakkelijk vormveranderingen ondergaat, samendrukbaar is, maar zich verzet tegen deze volumeverandering). Het begrip gelaagdheid is niet relevant voor het karakteriseren van het materiaal waaruit het monster is genomen.",
             "inScheme": "conceptscheme:bemonsteringstype",
             "notation": "vloeistof",
+            "note": "Het monster bestaat uit een van nature vloeibare stof (een stof die gemakkelijk vormveranderingen ondergaat, samendrukbaar is, maar zich verzet tegen deze volumeverandering). Het begrip gelaagdheid is niet relevant voor het karakteriseren van het materiaal waaruit het monster is genomen.",
             "prefLabel": "Vloeistof",
             "topConceptOf": "conceptscheme:bemonsteringstype"
         },
