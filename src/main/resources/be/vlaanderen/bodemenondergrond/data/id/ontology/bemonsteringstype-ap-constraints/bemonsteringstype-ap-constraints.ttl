@@ -51,9 +51,9 @@ omg_voc:bemonsteringstype
 # Node Shapes
 ons:schema
     a                sh:NodeShape ;
-    rdfs:label       "conceptschema van matrices"@en ;
-    sh:name          "conceptschema van matrices"@en ;
-    sh:description   "Het schema waarbinnen de matrices gedefinieerd zijn"@en ;
+    rdfs:label       "conceptschema van bemonsteringstypes"@en ;
+    sh:name          "conceptschema van bemonsteringstypes"@en ;
+    sh:description   "Het schema waarbinnen de bemonsteringstypes gedefinieerd zijn"@en ;
     rdfs:isDefinedBy omg_ont:bemonsteringstype, omg_voc:bemonsteringstype ;
     sh:property      omg_ps:conceptscheme_prefLabel, omg_ps:schema_hasTopConcept, omg_ps:dc_identifier, omg_ps:notation, omg_ps:note,
                      omg_ps:definition, omg_ps:rdf_type;
@@ -66,7 +66,7 @@ ons:collection
     a                sh:NodeShape ;
     rdfs:label       "verzameling"@en ;
     sh:name          "verzameling"@en ;
-    sh:description   "Verzamelingen bundelen matrices met gelijkaardige eigenschappen, analysemethoden of matrices waarin ze gemeten worden."@en ;
+    sh:description   "Verzamelingen bundelen bemonsteringstypes met gelijkaardige eigenschappen, analysemethoden of bemonsteringstypes waarin ze gemeten worden."@en ;
     rdfs:isDefinedBy omg_ont:bemonsteringstype, omg_voc:bemonsteringstype ;
     sh:property      omg_ps:prefLabel, omg_ps:collection_member, omg_ps:dc_identifier, omg_ps:notation,
                      omg_ps:inScheme, omg_ps:rdf_type;
