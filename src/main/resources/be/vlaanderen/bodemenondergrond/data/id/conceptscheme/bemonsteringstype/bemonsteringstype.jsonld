@@ -1,5 +1,13 @@
 {
     "@context": {
+        "sparql-service-description-graph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#graph",
+            "@type": "@id"
+        },
+        "defaultGraph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#defaultGraph",
+            "@type": "@id"
+        },
         "collections": {
             "@type": "@id",
             "@reverse": "member"
@@ -351,8 +359,8 @@
         "gemet": "http://www.eionet.europa.eu/gemet/concept/",
         "licence": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/",
         "metadata": "https://data.omgeving.vlaanderen.be/ns/metadata#",
-        "omg_catalog": "https://data.omgeving.vlaanderen.be/id/catalog/",
-        "omg_catalog_doc": "https://data.omgeving.vlaanderen.be/doc/catalog/",
+        "omg_catalog": "https://data.bodemenondergrond.vlaanderen.be/id/catalog/",
+        "omg_catalog_doc": "https://data.bodemenondergrond.vlaanderen.be/doc/catalog/",
         "omg_collection": "https://data.bodemenondergrond.vlaanderen.be/id/collection/",
         "omg_dataservice": "https://data.bodemenondergrond.vlaanderen.be/id/dataservice/",
         "omg_dataset_doc": "https://data.bodemenondergrond.vlaanderen.be/doc/dataset/",
